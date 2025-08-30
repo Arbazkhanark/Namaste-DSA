@@ -15,11 +15,13 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0026-remove-duplicates-from-sorted-array](https://github.com/Arbazkhanark/Namaste-DSA/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [0027-remove-element](https://github.com/Arbazkhanark/Namaste-DSA/tree/master/0027-remove-element) |
 | [0268-missing-number](https://github.com/Arbazkhanark/Namaste-DSA/tree/master/0268-missing-number) |
+| [0283-move-zeroes](https://github.com/Arbazkhanark/Namaste-DSA/tree/master/0283-move-zeroes) |
 ## Two Pointers
 |  |
 | ------- |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/Arbazkhanark/Namaste-DSA/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [0027-remove-element](https://github.com/Arbazkhanark/Namaste-DSA/tree/master/0027-remove-element) |
+| [0283-move-zeroes](https://github.com/Arbazkhanark/Namaste-DSA/tree/master/0283-move-zeroes) |
 | [0344-reverse-string](https://github.com/Arbazkhanark/Namaste-DSA/tree/master/0344-reverse-string) |
 ## String
 |  |
