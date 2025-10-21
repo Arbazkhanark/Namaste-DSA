@@ -57,4 +57,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0231-power-of-two](https://github.com/Arbazkhanark/Namaste-DSA/tree/master/0231-power-of-two) |
+## Linked List
+|  |
+| ------- |
+| [0838-design-linked-list](https://github.com/Arbazkhanark/Namaste-DSA/tree/master/0838-design-linked-list) |
+## Design
+|  |
+| ------- |
+| [0838-design-linked-list](https://github.com/Arbazkhanark/Namaste-DSA/tree/master/0838-design-linked-list) |
 <!---LeetCode Topics End-->
