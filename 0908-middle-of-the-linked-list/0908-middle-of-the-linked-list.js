@@ -10,13 +10,22 @@
  * @return {ListNode}
  */
 var middleNode = function(head) {
-    let slow=head;
-    let fast=head;
-
-    while(fast !==null && fast.next!==null){
-        slow=slow.next;
-        fast=fast.next.next;
+    let size = 0;
+    let curr = head;
+    
+    // Size nikalna
+    while (curr !== null) {
+        size++;
+        curr = curr.next;
     }
 
-    return slow;
+    let mid = Math.floor(size / 2);
+    curr = head;
+
+    // Middle tak pahuchna
+    for (let i = 0; i < mid; i++) {
+        curr = curr.next;
+    }
+
+    return curr;
 };
