@@ -27,6 +27,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0027-remove-element](https://github.com/Arbazkhanark/Namaste-DSA/tree/master/0027-remove-element) |
 | [0283-move-zeroes](https://github.com/Arbazkhanark/Namaste-DSA/tree/master/0283-move-zeroes) |
 | [0344-reverse-string](https://github.com/Arbazkhanark/Namaste-DSA/tree/master/0344-reverse-string) |
+| [0908-middle-of-the-linked-list](https://github.com/Arbazkhanark/Namaste-DSA/tree/master/0908-middle-of-the-linked-list) |
 ## String
 |  |
 | ------- |
@@ -61,6 +62,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0838-design-linked-list](https://github.com/Arbazkhanark/Namaste-DSA/tree/master/0838-design-linked-list) |
+| [0908-middle-of-the-linked-list](https://github.com/Arbazkhanark/Namaste-DSA/tree/master/0908-middle-of-the-linked-list) |
 ## Design
 |  |
 | ------- |
