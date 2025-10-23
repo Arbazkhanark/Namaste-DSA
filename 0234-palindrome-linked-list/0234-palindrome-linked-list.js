@@ -31,33 +31,36 @@ var isPalindrome = function (head) {
 
 
 
-    let slow=head;
-    let fast=head;
+    let slow = head;
+    let fast = head;
 
-    while(fast && fast.next!==null){
-        slow=slow.next;
-        fast=fast.next.next;
+    // Step 1: Find middle of the linked list
+    while (fast && fast.next !== null) {
+        slow = slow.next;
+        fast = fast.next.next;
     }
 
 
-    let prev=null;
-    let curr=slow;
-
-    while(curr){
-        let temp=curr.next;
-        curr.next=prev;
-        prev=curr;
-        curr=temp;
+    // Step 2: Reverse second half
+    let prev = null;
+    let curr = slow;
+    while (curr) {
+        let temp = curr.next;
+        curr.next = prev;
+        prev = curr;
+        curr = temp;
     }
 
-    let start=head;
-    while(prev && start){
-        if(start.val !== prev.val){
+
+    // Step 3: Compare both halves
+    let start = head;
+    while (prev && start) {
+        if (start.val !== prev.val) {
             return false;
         }
 
-        prev=prev.next;
-        start=start.next;
+        prev = prev.next;
+        start = start.next;
     }
 
     return true;
