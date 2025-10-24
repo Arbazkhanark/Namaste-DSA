@@ -12,9 +12,6 @@
  * @return {ListNode}
  */
 var getIntersectionNode = function(headA, headB) {
-    
-    let currB=headB;
-
     while(headA !==null ){
         let currA=headA;
 
