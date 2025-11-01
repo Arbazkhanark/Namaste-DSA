@@ -25,11 +25,11 @@ var removeNthFromEnd = function(head, n) {
         curr = curr.next;
     }
 
-    let targetIndex = size - n;  // index of node to delete (0-based)
+    let targetIndex = size - n+1;  // index of node to delete (0-based)
     curr = sentinel; // ✅ start from sentinel, not head
 
     // move to previous node of target
-    for (let i = 0; i < targetIndex; i++) {
+    for (let i = 1; i < targetIndex; i++) {
         curr = curr.next;
     }
 
