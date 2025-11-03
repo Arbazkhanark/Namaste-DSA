@@ -10,11 +10,20 @@
  * @param {TreeNode} root
  * @return {number[]}
  */
-var inorderTraversal = function(root) {
-    let ans=[];
+var inorderTraversal = function (root) {
 
-    function traverse(curr){
-        if(!curr) return;
+    let ans = inorderTraversalRecurrsive(root);
+    // let res=inorderTraversalItrative(root);
+    // return res;
+    return ans;
+};
+
+
+function inorderTraversalRecurrsive(root) {
+    let ans = [];
+
+    function traverse(curr) {
+        if (!curr) return;
         traverse(curr.left)
         ans.push(curr.val);
         traverse(curr.right)
@@ -23,4 +32,24 @@ var inorderTraversal = function(root) {
     traverse(root);
 
     return ans;
-};
+}
+
+
+function inorderTraversalItrative(root) {
+    let ans = [];
+    let stack = [];
+    let curr = root;
+    while (curr || stack.length) {
+        while (curr) {
+            stack.push(curr);
+            curr = curr?.left;
+        }
+
+        curr = stack.pop();  // This is basically Root 
+        ans.push(curr?.val);
+        curr = curr?.right;
+    }
+
+
+    return ans;
+}
