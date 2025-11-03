@@ -11,24 +11,26 @@
  * @return {number[]}
  */
 var preorderTraversal = function(root) { // Root->Left->Right
-
-    // let ans=[];
-    // let stack=new Stack();
-
-    // function traverse(curr){
-    //     if(curr==null) return null;
-    //     ans.push(curr.val);
-    //     traverse(curr.left);
-    //     traverse(curr.right);
-    // }
-    
-    // traverse(root)
-
-    // return ans;
+    // let ans=preOrderTraversalUsingRecurrsion(root);
+    let ans=preOrderTraversalUsingIterative(root);
+    return ans;
+};
 
 
+function preOrderTraversalUsingRecurrsion(root){
+    let ans=[];
+    function traverse(curr){
+        if(curr==null) return null;
+        ans.push(curr.val);
+        traverse(curr.left);
+        traverse(curr.right);
+    }
+    traverse(root)
 
-//------- Iterative Approach using Stack -------//
+    return ans;
+}
+
+function preOrderTraversalUsingIterative(root){
     if(!root) return [];
     let ans=[];
     let stack=[root];
@@ -41,4 +43,4 @@ var preorderTraversal = function(root) { // Root->Left->Right
     }
 
     return ans;
-};
+}
