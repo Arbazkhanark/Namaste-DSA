@@ -82,7 +82,7 @@ function postOrderTraversalUsingItrativeWithOneStack(root) {
         let peekNode = stack[stack.length - 1];
 
         // If right exists & it is not the Last Visited
-        if (peekNode.right && peekNode.right!==lastVisitedNode) {
+        if (peekNode.right && lastVisitedNode!==peekNode.right) {
             curr = peekNode.right;
         } else {
             ans.push(peekNode.val);
