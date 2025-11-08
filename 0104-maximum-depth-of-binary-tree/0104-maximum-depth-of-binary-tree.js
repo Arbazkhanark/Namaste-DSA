@@ -11,6 +11,26 @@
  * @return {number}
  */
 var maxDepth = function(root) {
+    // let res=maxDepthUsingExtraVariable(root);
+    let res=maxDepthUsingWithoutVariable(root);
+    return res;
+    
+};
+
+
+
+
+function maxDepthUsingWithoutVariable(root){
+    if(!root) return 0;
+    let leftMax=maxDepthUsingWithoutVariable(root.left);
+    let rightMax=maxDepthUsingWithoutVariable(root.right);
+    return 1 + Math.max(leftMax,rightMax);
+}
+
+
+
+
+function maxDepthUsingExtraVariable(root){
     if(!root) return 0;
 
     let maxDepth=0;
@@ -24,4 +44,4 @@ var maxDepth = function(root) {
     traversal(root,1);
 
     return maxDepth;
-};
+}
